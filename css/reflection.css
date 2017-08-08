@@ -1,0 +1,28 @@
+#ahb{
+	transform: rotateY(180deg);
+	margin-left: -15px;
+	transition: 0.6s;
+}
+
+#ahb:hover{
+	transform: rotateY(0deg);
+	margin-top: 0px;
+	margin-left: 39px;
+	transition: 0.6s;
+}
+
+
+li:nth-child(2) {
+	list-style-type: square;
+}
+
+p a{
+	background-color: #ffc42c;
+	transition-duration: 1s;
+}
+
+p a:hover {
+	transition-duration: 0s;
+	background-color: white;
+	color: #ffc42c;
+}
