@@ -79,6 +79,10 @@ p {
 	line-height: 35px;
 }
 
+#tail {
+	position: absolute;
+}
+
 
 
 

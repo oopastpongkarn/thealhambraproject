@@ -31,3 +31,8 @@ p a:hover {
 	background-color: white;
 	color: #ffc42c;
 }
+
+#tail {
+	top: 190px;
+	left: 443px;
+}
