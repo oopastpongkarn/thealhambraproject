@@ -83,6 +83,20 @@ p {
 	position: absolute;
 }
 
+#progress h3 {
+	font-size: 80px;
+	line-height: 100px;
+}
+
+#progress a {
+	background-color: #ffc42c;
+}
+
+#progress {
+	animation-duration: 0.5s;
+}
+
+
 
 
 

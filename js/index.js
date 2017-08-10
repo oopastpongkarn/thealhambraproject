@@ -23,3 +23,18 @@ $(document).bind('mousemove', function(e){
         top: e.pageY + 5
     });
 });
+
+
+//P R O G R E S S
+
+$(function() {
+  $('#progress a').hover(function() {
+    $('#rlink a').css('color', '#ffc42c'),
+	$('#progress').animate({'opacity': '0'}, '100');
+	  
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#rlink a').css('color', 'black'),
+	$('#progress').animate({'opacity': '1'}, '100');
+  });
+});
