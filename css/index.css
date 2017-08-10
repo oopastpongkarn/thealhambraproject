@@ -81,6 +81,7 @@ p {
 
 #tail {
 	position: absolute;
+	z-index: 2000;
 }
 
 #progress h3 {

@@ -28,7 +28,7 @@ p a{
 
 p a:hover {
 	transition-duration: 0s;
-	background-color: white;
+	background-color: transparent;
 	color: #ffc42c;
 }
 
