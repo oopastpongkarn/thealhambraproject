@@ -1,3 +1,6 @@
+body {
+	padding-bottom: 110px;
+}
 #ahb {
 	position: fixed;
 	margin-left: 39px;
@@ -10,4 +13,23 @@
 
 img {
 	width: 100%;
+	display: block;
 }
+
+#recording {
+    margin-top: 105px;
+    padding-bottom: 80px;
+    position: absolute;
+}
+
+#grey {
+	width: 200px; 
+	height: 145.562px;
+	filter: grayscale(100%);
+	margin-left: 210px;
+	    margin-bottom: 80px;
+
+}
+
+
+
