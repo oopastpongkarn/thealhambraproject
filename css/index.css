@@ -90,6 +90,13 @@ p {
 
 #progress a {
 	background-color: #ffc42c;
+	animation-duration: 0.5s;
+}
+
+#progress a:hover {
+	background-color: white;
+	color: #ffc42c;
+	animation-duration: 0.5s;
 }
 
 #progress {

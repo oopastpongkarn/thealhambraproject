@@ -29,12 +29,10 @@ $(document).bind('mousemove', function(e){
 
 $(function() {
   $('#progress a').hover(function() {
-    $('#rlink a').css('color', '#ffc42c'),
-	$('#progress').animate({'opacity': '0'}, '100');
-	  
+    $('#rlink a').css('color', '#ffc42c');
+	 
   }, function() {
     // on mouseout, reset the background colour
-    $('#rlink a').css('color', 'black'),
-	$('#progress').animate({'opacity': '1'}, '100');
+    $('#rlink a').css('color', 'black');
   });
 });
