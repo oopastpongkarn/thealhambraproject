@@ -222,18 +222,3 @@
 }
 
 
-
-
-
-
-.bottom {
-    position : absolute;
-    width    : 0;
-    height   : 0;
-    z-index  : 99;
-    
-    border-right  : 84px solid transparent;
-    border-bottom : 50px solid black;
-}
-
-

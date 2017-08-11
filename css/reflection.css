@@ -1,13 +1,13 @@
 #ahb{
 	transform: rotateY(180deg);
-	margin-left: -15px;
+	margin-left: -55px;
 	transition: 0.6s;
 }
 
 #ahb:hover{
 	transform: rotateY(0deg);
 	margin-top: 0px;
-	margin-left: 39px;
+	margin-left: 0px;
 	transition: 0.6s;
 }
 
