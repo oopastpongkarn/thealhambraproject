@@ -41,7 +41,7 @@ h3 {
 }
 
 ul {
-	width: 140px;
+	width: 100px;
 	height: 65px;
 	margin-top: 135px;
 	position: fixed;
@@ -56,35 +56,37 @@ ul li {
 	list-style-type: none;
 }
 
-/*
+.navbar-fixed-left {
+  margin-top: 165px;
+  margin-left: 45px;
+  height: 100%;
+  z-index: 100;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 100px;
+z-index: 100;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 310px;
+}
+
 ul li:hover {
 	list-style-type: square;
 }
-*/
 
 #ahb {
 	position: fixed;
-	margin-left: 39px;
 /*	background-color: yellow;*/
 }
-
-#body{
-margin-top: 170px;
-/*	margin-left: 10%;*/
-}
-
 
 #contents {
 	width: 100%;
 	height: 100%;
 /*	background-color: yellow;*/
-	position: relative;
-}
-
-
-#tail {
-	position: absolute;
-	z-index: 2000;
+	position:relative;
 }
 
 #progress h3 {
