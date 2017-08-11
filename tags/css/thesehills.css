@@ -22,13 +22,34 @@ img {
     position: absolute;
 }
 
+/*
 #grey {
 	width: 200px; 
 	height: 145.562px;
 	filter: grayscale(100%);
 	margin-left: 210px;
-	    margin-bottom: 80px;
+	margin-bottom: 80px;
+}
+*/
 
+.vimeoFrame {
+	width:200px;
+	height: 145.562px;
+	filter: grayscale(100%);
+	overflow:hidden; 
+	margin-left: 180px;
+    margin-bottom: 90px;
+    margin-top: 1px;
+} 
+
+.vimeoFrame .vimeoXtra {
+	margin-left: -50px;
+}
+
+
+.tritags {
+	display: inline;
+	position: absolute;
 }
 
 

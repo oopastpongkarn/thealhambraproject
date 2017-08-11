@@ -1,0 +1,32 @@
+
+@media (max-width: 1200px) {
+	#seventeen {
+		margin-left: -15px;
+	}
+	#seventeen > a {
+		margin-left: -10px;
+		transform: scale(0.9);	
+	}
+}
+
+@media (max-width: 1103px) {
+	#seventeen {
+		margin-left: -15px;
+	}
+	#seventeen > a {
+		margin-left: -15px;
+		transform: scale(0.8);
+	}
+	
+}
+
+@media (max-width: 991px) {
+	#seventeen {
+		margin-left: -5px;
+	}
+	#seventeen > a {
+		margin-left: -20px;
+		transform: scale(0.8);
+	}
+	
+}
