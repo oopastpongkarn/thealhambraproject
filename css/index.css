@@ -2,6 +2,11 @@ body {
 	font-family: 'fivo';
 }
 
+p {	font-family: 'Droid Serif', serif;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.3px;
+}
 
 @font-face {
     font-family: 'fivo';
@@ -74,11 +79,6 @@ margin-top: 170px;
 /*	background-color: yellow;*/
 }
 
-p {	font-family: 'Droid Serif', serif;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.3px;
-}
 
 #tail {
 	position: absolute;
