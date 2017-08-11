@@ -15,17 +15,22 @@ li:nth-child(3) {
 	list-style-type: square;
 }
 
-#roob {
+#roob img {
 	width: 100%;
 	position: relative;
 }
 
 div > img{
-	width: 90%;
+	width: 50%;
 	display: block;
 }
 
-#recording {
+#walkingapp {
+	width: 100%;
+	height: 550px;
+}
+
+#drawing {
     margin-top: 105px;
     padding-bottom: 80px;
     position: absolute;
@@ -41,22 +46,6 @@ div > img{
 	display: inline-flex;
 
 }
-
-/*
-.vimeoFrame {
-	width:200px;
-	height: 145.562px;
-	filter: grayscale(100%);
-	overflow:hidden; 
-	margin-left: 180px;
-    margin-bottom: 90px;
-    margin-top: 1px;
-} 
-
-.vimeoFrame .vimeoXtra {
-	margin-left: -50px;
-}
-*/
 
 
 .tritags1 {

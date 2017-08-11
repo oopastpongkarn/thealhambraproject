@@ -2,11 +2,11 @@ body {
 	font-family: 'fivo';
 }
 
-p {	font-family: 'Droid Serif', serif;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.3px;
+/*
+.nav a {
+	text-transform: uppercase;
 }
+*/
 
 @font-face {
     font-family: 'fivo';
@@ -18,6 +18,22 @@ p {	font-family: 'Droid Serif', serif;
     src: url('fivo_bold.ttf');
 	font-weight: bold;
 }
+
+@font-face {
+    font-family: 'fivo';
+    src: url('fivo_light.otf');
+	font-weight: thin;
+}
+
+
+p {	font-family: 'fivo', serif;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.3px;
+	text-align: justify;
+	font-weight: 100;
+}
+
 
 a {
 	color: black;
@@ -41,8 +57,8 @@ h3 {
 }
 
 ul {
-	width: 100px;
-	height: 65px;
+	width: 117px;
+	height: 70px;
 	margin-top: 135px;
 	position: fixed;
 	border-right: black solid 2px;
@@ -51,13 +67,14 @@ ul {
 
 ul li {
 	margin-top: -10px;
-	font-size: 15px;
-	font-weight: 100;
+	font-size: 13px;
+	font-weight: 800;
 	list-style-type: none;
+	text-transform: uppercase;
 }
 
 .navbar-fixed-left {
-  margin-top: 165px;
+  margin-top: 200px;
   margin-left: 45px;
   height: 100%;
   z-index: 100;

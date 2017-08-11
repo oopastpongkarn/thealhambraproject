@@ -1,32 +1,69 @@
-
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 	#seventeen {
-		margin-left: -15px;
+		margin-left: 20px;
 	}
 	#seventeen > a {
-		margin-left: -10px;
-		transform: scale(0.9);	
+		padding-right: 15px;
+	}
+}
+@media (max-width: 1300px) {
+	#seventeen > a {
+		padding-right: 11px;
+	}
+}
+@media (max-width: 1207px) {
+	#seventeen > a {
+		padding-right: 7px;
 	}
 }
 
-@media (max-width: 1103px) {
-	#seventeen {
-		margin-left: -15px;
-	}
+@media (max-width: 1120px) {
 	#seventeen > a {
-		margin-left: -15px;
-		transform: scale(0.8);
+		padding-right: 3px;
+		transform: scale(0.9);
 	}
-	
+}
+
+@media (max-width: 1075px) {
+	#seventeen > a {
+	    margin-right: -5px;
+		transform: scale(0.85);
+	}
 }
 
 @media (max-width: 991px) {
-	#seventeen {
-		margin-left: -5px;
-	}
 	#seventeen > a {
-		margin-left: -20px;
+	    margin-right: -8px;
 		transform: scale(0.8);
 	}
+}
+
+@media (max-width: 940px) {
+	#seventeen > a {
+	    margin-right: -15px;
+		transform: scale(0.7);
+	}
+}
+
+@media (max-width: 821px) {
+	#seventeen > a {
+	    margin-right: -20px;
+		transform: scale(0.65);
+	}
+}
+
+/*iphone5*/
+
+@media screen and (device-aspect-ratio: 2/3) {
 	
 }
+
+@media screen and (device-aspect-ratio: 40/71) {
+	#seventeen > a {
+	    margin-right: -20px;
+		transform: scale(0.5);
+	}
+}
+
+
+
