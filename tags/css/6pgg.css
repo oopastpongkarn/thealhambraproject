@@ -11,3 +11,9 @@ img {
 #v6 {
 	opacity: 0.5;
 }
+
+p {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 20px 5px 20px 5px;	
+}
