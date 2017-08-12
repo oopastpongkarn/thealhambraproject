@@ -21,7 +21,7 @@ li:nth-child(3) {
 }
 
 div > img{
-	width: 90%;
+	width: 100%;
 	display: block;
 }
 
@@ -60,7 +60,7 @@ div > img{
 
 
 .tritags1 {
-	right: 0px;
+	right: -50px;
 	position: absolute;
 	margin-top: -55px;
 	transition-duration: 0.2s;	
@@ -76,7 +76,7 @@ div > img{
 }
 
 .tritags3 {
-	right: 0px;
+	right: -50px;
 	position: absolute;
 	margin-top: -25px;
 	transition-duration: 0.2s;	
