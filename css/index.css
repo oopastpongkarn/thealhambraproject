@@ -119,13 +119,13 @@ ul li:hover {
 }
 
 #progress a {
-	background-color: #ffc42c;
+	background-color: rgb(0, 255, 255);
 	animation-duration: 0.5s;
 }
 
 #progress a:hover {
 	background-color: white;
-	color: #ffc42c;
+	color: rgb(0, 255, 255);
 	animation-duration: 0.5s;
 }
 
