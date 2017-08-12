@@ -58,7 +58,7 @@ h3 {
 
 ul {
 	width: 117px;
-	height: 70px;
+	height: 63px;
 	margin-top: 135px;
 	position: fixed;
 	border-right: black solid 2px;
@@ -71,6 +71,13 @@ ul li {
 	font-weight: 800;
 	list-style-type: none;
 	text-transform: uppercase;
+}
+
+.break_line {
+	margin-top: 20px;
+	background-color: black;
+	width: 100px;
+	height: 2px;
 }
 
 .navbar-fixed-left {
