@@ -73,6 +73,13 @@ ul li {
 	text-transform: uppercase;
 }
 
+.break_line {
+	margin-top: 20px;
+	background-color: black;
+	width: 100px;
+	height: 2px;
+}
+
 .navbar-fixed-left {
   margin-top: 200px;
   margin-left: 45px;

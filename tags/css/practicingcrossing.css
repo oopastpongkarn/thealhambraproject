@@ -37,14 +37,31 @@ div > img{
 	
 }
 
-#grey {
-	width: 200px;
-	height: 145.562px;
-	filter: grayscale(100%);
-	margin-left: 210px;
-	margin-bottom: 80px;
-	display: inline-flex;
+.video-container {
+	position: relative;
+    padding-bottom: 75.2%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
 
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:-90px;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#grey {
+	width: 100%;
+	margin-bottom: 80px;
+	position: absolute; 
+}
+
+video {
+	width: 100%;
+	position: absolute;
 }
 
 
@@ -77,10 +94,16 @@ a:hover {
 	transition-duration: 0.2s;	
 }
 
+p {padding-bottom: 90px;
+	padding-top: 10px;}
 
+#walking a {
+	text-decoration: underline;
+}
 
-
-
+#cecile {
+	margin-top: -90px;
+}
 
 
 
