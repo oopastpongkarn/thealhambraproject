@@ -47,17 +47,19 @@ div > img{
 
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
-	top:-90px;
+	top:0px;
 	left:0;
 	width:100%;
 	height:100%;
 }
 
+/*
 #grey {
 	width: 100%;
 	margin-bottom: 80px;
 	position: absolute; 
 }
+*/
 
 video {
 	width: 100%;
