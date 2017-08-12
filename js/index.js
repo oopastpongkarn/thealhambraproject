@@ -17,23 +17,23 @@
 //
 //
 
-$(document).bind('mousemove', function(e){
-    $('#tail').css({
-        left: e.pageX + 20,
-        top: e.pageY + 5
-    });
-});
+//$(document).bind('mousemove', function(e){
+//    $('#tail').css({
+//        left: e.pageX + 20,
+//        top: e.pageY + 5
+//    });
+//});
 
 
 
 //P R O G R E S S
-
-$(function() {
-  $('#progress a').hover(function() {
-    $('#rlink a').css('color', '#ffc42c');
-	 
-  }, function() {
-    // on mouseout, reset the background colour
-    $('#rlink a').css('color', 'black');
-  });
-});
+//
+//$(function() {
+//  $('#progress a').hover(function() {
+//    $('#rlink a').css('color', 'rgb(0, 255, 255);');
+//	 
+//  }, function() {
+//    // on mouseout, reset the background colour
+//    $('#rlink a').css('color', 'rgb(0, 255, 255);');
+//  });
+//});

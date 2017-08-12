@@ -28,14 +28,14 @@ li:nth-child(3) {
 
 
 p a{
-	background-color: #ffc42c;
+	background-color: rgb(0, 255, 255);
 	transition-duration: 1s;
 }
 
 p a:hover {
 	transition-duration: 0s;
 	background-color: transparent;
-	color: #ffc42c;
+	color: rgb(0, 255, 255);
 }
 
 /*
