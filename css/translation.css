@@ -1,13 +1,15 @@
-#ahb{
-	transition: 0.6s;
+/*translation.css is a file for translation.html style*/
+
+.alhambra-main{
 	margin-left: -40px;
+	transition: 0.6s;
 }
 
-#ahb:hover{
-	margin-top: 0px;
+.alhambra-main:hover{
 	margin-left: 0px;
-	transition: 0.6s;
+	transition: 0.6s
 }
+
 
 .navbar-fixed-left {
 	margin-left: 45px;

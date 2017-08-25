@@ -1,0 +1,161 @@
+/*style.css is a file for universal style*/
+
+/*font declaration*/
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+	font-family: 'fivo';
+    position: relative;
+    min-height: 100%;
+}
+.container-fluid{
+    padding-bottom: 100px; 
+}
+@font-face {
+    font-family: 'fivo';
+    src: url('fivo_reg.ttf');
+}
+
+@font-face {
+    font-family: 'fivo';
+    src: url('fivo_bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: 'fivo';
+    src: url('fivo_light.otf');
+	font-weight: thin;
+}
+
+/* seventeen triangels */
+.triangle-box{
+    margin: 50px 50px 100px 50px;
+    text-align: center; 
+}
+.triangle{
+    display: inline-block;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Navbar for Mibile */
+.navbar-toggler-icon{
+    background-image: url(../tris/pattern3.svg) !important;
+}
+button.navbar-toggler.navbar-toggler-right{
+    border: 0;
+}
+@media(min-width: 575px){
+    nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
+        display: none;
+    }
+}
+
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
+    border-bottom: 2px solid black;
+    background-color: #fff; 
+}
+.navbar-border{
+    border-bottom: 2px solid black;
+    margin: 0 0 0 0;
+}
+/* Navbar */
+a.alhambra-link {
+    color: #000;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+a.alhambra-link:hover{
+    color: #6F6F6F;
+}
+
+ul.navbar{
+    list-style-type: none;
+    padding: 0;
+    border-right: 2px solid #000;
+    font-size: 13px;
+    font-weight: 700; 
+    width: 120px;
+}
+
+li.navbar-menu{
+    padding: 3px 0 3px 0; 
+}
+
+li.navbar-menu:hover{
+    list-style-type: square;
+    color: #6F6F6F;
+}
+
+li.navbar-menu a{
+    color: #000;
+    text-transform: uppercase;
+}
+
+li.navbar-menu a:hover{
+    color: #6F6F6F;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+}
+
+/* content */
+.content{
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.content h3{
+ font-size: 70px;
+ line-height: 90px;
+ font-family: 'fivo';
+ }
+
+ .rotation{
+    background-color: cyan;
+    color: #000;
+    font-family: 'fivo';
+    transition-duration: 0.5s;	
+ }
+
+.rotation:hover{
+    background-color: white;
+    color: cyan;
+}
+
+a:hover{
+    text-decoration: none;
+    transition-duration: 0.2s;	
+}
+
+/*content page*/
+h3.page-title{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+img.page-image{
+    width: 143%;
+    margin-left: -24%;
+    margin-top: -70px;
+}
+.footer{
+    text-align: center;
+    color: #000; 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 575px) {
+    .hidden-xs {
+        display: none;
+    }
+}
