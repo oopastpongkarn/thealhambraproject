@@ -1,13 +1,17 @@
-#ahb{
-	transform: rotateY(180deg);
-	margin-left: -55px;
+/*reflection.css is a file for reflection.html style*/
+
+.alhambra-main{
 	transition: 0.6s;
+	transform: rotateY(180deg);
+	margin-right: 90px;
 }
 
-#ahb:hover{
+.alhambra-main:hover{
 	transform: rotateY(0deg);
-	margin-top: 0px;
-	margin-left: 0px;
+}
+
+.alhambra-link:hover{
+    color: #6F6F6F;
 	transition: 0.6s;
 }
 
