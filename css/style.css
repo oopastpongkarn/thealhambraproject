@@ -38,11 +38,55 @@ body {
 .triangle{
     display: inline-block;
 }
-.icon{
-    width: 60px;
-    height: 60px;
+
+.triangle-1{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
+
+.triangle-2{
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+svg{
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
+
+svg.icon {
+    width: 80px;
+    margin-right: 10px;
+}
+
+svg.icon2 {
+    height: 60px;
+    width: 60px;
+}
+
+svg.icon3 {
+    height: 100px;
+    width: 50px;
+    margin-right: 0;
+}
+
+svg.icon4 {
+    height: 60px;
+    width: 70px;
+}
+
+svg.icon5 {
+    height: 70px;
+    width: 70px;
+}
+
+a svg:hover{
+    fill: cyan;
+}
+
 
 /* Navbar for Mibile */
 .navbar-toggler-icon{
@@ -51,7 +95,7 @@ body {
 button.navbar-toggler.navbar-toggler-right{
     border: 0;
 }
-@media(min-width: 575px){
+@media(min-width: 576px){
     nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
         display: none;
     }
@@ -154,8 +198,40 @@ img.page-image{
     bottom: 0;
 }
 
-@media (max-width: 575px) {
-    .hidden-xs {
+/*hidden class*/
+@media (max-width: 576px) {
+    .hidden-xs{
         display: none;
+    }
+}
+
+@media (max-width: 768px ){
+    .hidden-sm{
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px ){
+    .hidden-md{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .hidden-lg{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .hidden-xl{
+        display: none;
+    }
+}
+/*show class */
+@media (max-width:576px){
+    .show-xs{
+        display: block;
     }
 }
