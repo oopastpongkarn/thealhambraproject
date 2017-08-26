@@ -32,12 +32,27 @@ body {
 
 /* seventeen triangels */
 .triangle-box{
+    margin: 30px 10px 10px 20px;
+    text-align: center; 
+}
+
+@media(min-width:576px){
+    .triangle-box{
     margin: 50px 50px 100px 50px;
     text-align: center; 
 }
+} 
+
 .triangle{
+    margin: 0 10px 20px 10px;
     display: inline-block;
 }
+
+@media(min-width:576px){
+    .triangle{
+    display: inline-block;
+    }   
+} 
 
 .triangle-1{
     display: inline-block;
@@ -110,10 +125,27 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
     margin: 0 0 0 0;
 }
 /* Navbar */
+.alhambra-main{
+    margin: 70px 0 40px 0;
+}
+
+@media(min-width:576px){
+    .alhambra-main{
+        margin: 0;
+    }
+}
 a.alhambra-link {
-    color: #000;
-    font-size: 35px;
+    color:black;
+    font-size: 60px;
     font-weight: 900;
+}
+
+@media(min-width:576px){
+    a.alhambra-link{
+        color: #000;
+        font-size: 35px;
+        font-weight: 900;
+    }
 }
 
 a.alhambra-link:hover{
@@ -123,10 +155,20 @@ a.alhambra-link:hover{
 ul.navbar{
     list-style-type: none;
     padding: 0;
-    border-right: 2px solid #000;
-    font-size: 13px;
+    font-size: 22px;
     font-weight: 700; 
     width: 120px;
+}
+
+@media(min-width:576px){
+    ul.navbar{
+        list-style-type: none;
+        padding: 0;
+        border-right: 2px solid #000;
+        font-size: 13px;
+        font-weight: 700; 
+        width: 120px;
+    }
 }
 
 li.navbar-menu{
