@@ -38,7 +38,7 @@ body {
 
 @media(min-width:576px){
     .triangle-box{
-    margin: 50px 50px 100px 50px;
+    margin: 0px 50px 70px 50px;
     text-align: center; 
 }
 } 
@@ -98,7 +98,6 @@ svg.icon5 {
 a svg:hover{
     fill: cyan;
 }
-
 
 /* Navbar for Mobile */
 .navbar-light .navbar-toggler-icon {
@@ -250,7 +249,6 @@ h3.content-title{
     margin: 50px 10px 20px 10px;  
 }
 
-
  .rotation{
     background-color: cyan;
     color: #000;
@@ -269,16 +267,7 @@ a:hover{
 }
 
 /*content page*/
-h3.page-title{
-    font-size: 35px;
-    font-weight: 900;
-}
 
-img.page-image{
-    width: 143%;
-    margin-left: -24%;
-    margin-top: -70px;
-}
 .footer{
     text-align: center;
     color: #000; 
@@ -323,4 +312,55 @@ img.page-image{
     .show-xs{
         display: block;
     }
+}
+
+/*triangle-pages*/
+.triangle-content-title{
+    font-size: 26px;
+font-weight: 900;
+}
+
+@media(min-width: 576px){
+    .triangle-content-title{
+    font-size: 35px;
+font-weight: 900;
+margin-top: -10px; 
+}
+}
+
+.page-image{
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+@media(min-width: 576px){
+    .page-image{
+    width: 130%;
+    margin-left: -165px;
+    margin-top: -50px;
+}
+}
+
+p.triangle-content-paragraph{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 5px 20px 5px;
+    font-size: 16px;
+    text-align: justify;
+    font-weight:100; 
+}
+
+@media(min-width:576px){
+    p.triangle-content-paragraph{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 5px 20px 5px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    font-weight:100; 
+}
 }
