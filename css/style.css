@@ -223,6 +223,10 @@ li.navbar-menu a:hover{
     text-align: left;
 
 }
+p.content-paragraph{
+    font-size: 16px;
+    margin-left: 10px;
+}
 
 p.content-text{
  font-size: 26px;
@@ -242,7 +246,7 @@ p.content-text{
 h3.content-title{
     font-size: 26px;
     font-weight: 900;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 50px 10px 20px 10px;  
 }
 
