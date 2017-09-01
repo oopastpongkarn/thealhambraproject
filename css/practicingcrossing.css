@@ -104,6 +104,13 @@ p {padding-bottom: 50px;
 }
 
 
+img.page-image{
+	width: 100%;
+	margin: 0;
+}
 
+p.content-link{
+	text-decoration: underline;
+}
 
 
