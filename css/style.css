@@ -10,6 +10,9 @@ body {
     position: relative;
     min-height: 100%;
 }
+a{
+    color: black;
+}
 .container-fluid{
     padding-bottom: 100px; 
 }
