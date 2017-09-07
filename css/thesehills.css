@@ -36,8 +36,6 @@ div > img{
 	width: 200px;
 	height: 145.562px;
 	filter: grayscale(100%);
-	margin-left: 210px;
-	margin-bottom: 80px;
 	display: inline-flex;
 
 }
@@ -88,11 +86,38 @@ a:hover {
 	transition-duration: 0.2s;	
 }
 
+img.page-image{
+	min-width: 90%;
+	width: 80%;
+	margin: 0;
+display: inline-block;
+}
 
+.page-text{
+	position: relative;
+	bottom: 20px;
+}
 
+img.page-image-map{
+	min-width: 90%;
+	width: 80%;	
+	margin-top: 80px;
+	display: inline-block;
+}
 
+.content{
+	position: relative;
+}
 
+.cyan-svg{
+	fill: cyan;
+	height: 60px;
+	width: 60px;
+}
 
-
-
-
+.svg-box{
+	display:inline-block; 
+	position:absolute; 
+	bottom: 0;
+	 margin-bottom:-10px;
+}
