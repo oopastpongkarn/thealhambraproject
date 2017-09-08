@@ -103,6 +103,10 @@ a svg:hover{
 }
 
 /* Navbar for Mobile */
+nav.navbar {
+    flex-direction: row;
+    align-items: center;
+}
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -115,6 +119,7 @@ a svg:hover{
 
 button.navbar-toggler.navbar-toggler-right{
     border: 0;
+    position: static;
 }
 
 button.navbar-toggler{
@@ -142,14 +147,28 @@ a.navbar-menu{
     font-size: 18px;   
 }
 
+
 .navbar-menu-text{
     margin: 15px 0 10px 0;
+}
+
+.navbar-collapse{
+    padding: 0 15px;
 }
 
 button.close-button{
     float: right;
     font-size: 20px;
     padding-right: 15px;
+    background: none;
+    border: none;
+}
+
+.alhambra{
+    color: black;
+    font-weight: 700;
+    flex: 1 auto;
+    text-align: center;
 }
 /* Navbar */
 .alhambra-main{
