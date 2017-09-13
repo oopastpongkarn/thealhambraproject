@@ -386,3 +386,11 @@ p.triangle-content-paragraph{
     font-weight:100; 
 }
 }
+
+a.go-back{
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-size: 25px;
+    margin-left: 10px;
+}
