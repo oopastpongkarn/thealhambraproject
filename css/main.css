@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'fivo';
+    src: url('../assets/font/fivo_reg.ttf');
+}
+@font-face {
+    font-family: 'fivo';
+    src: url('../assets/font/fivo_bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+    font-family: 'fivo';
+    src: url('../assets/font/fivo_light.otf');
+	font-weight: thin;
+}
+
+:root {
+	--header-size: 1.6em;
+	--color-main: #00ffff;
+  --sideCol: black;
+  --site-padding: 1em;
+}
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+    font-family: Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+		padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Courier, monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+nav a {
+  font-size: 0.8em;
+}
+
+body {
+	font-family: 'fivo';
+	font-size: 1.2em;
+	line-height: var(--header-size);
+}
+
+::selection{
+	background-color: var(--color-main);
+}
+
+h1 {
+	font-size: var(--header-size);
+	pointer-events: none;
+  text-align: center;
+  padding: .8em 0;
+  border-bottom: 1px solid var(--sideCol);
+}
+h2 {
+  font-weight: 600;
+  font-style: italic;
+  padding: .8em 0 1.6em;
+}
+article {
+  padding-top: 2.6em;
+}
+article p {
+  margin-bottom: var(--header-size);
+}
+
+/*--------------------------------------------------------------
+Navigation
+--------------------------------------------------------------*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: .5em 0 0.4em;
+  top: -0.1em;
+}
+
+nav {
+	--underscore-color: transparent;
+}
+nav a{
+	border-bottom: 1px solid var(--underscore-color);
+}
+nav a:hover {
+	--underscore-color: black;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+footer {
+  /* position: fixed; */
+  position: sticky;
+  height: 3em;
+  bottom: 0;
+  left: 0;
+  background: white;
+}
+footer aside {
+  display: flex;
+  overflow: scroll;
+}
+footer img{
+  height: 3em;
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+  padding: var(--site-padding);
+	max-width: 640px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+/* Check for CSS Grid support: */
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 720px) {
+    :root {
+      --site-padding: 0 2em 2em;
+      --header-size: 1.4em;
+    }
+		.site {
+      max-width: none;
+      display: grid;
+      grid-template-columns: repeat(2, calc(50vw - 4em));
+      grid-template-rows: 4em 1fr;
+      grid-column-gap: 4em;
+		}
+
+    header{
+      background: black;
+      position: sticky;
+      top: 0;
+      grid-row: 1/2;
+    }
+    header h1{
+      color: white;
+      border-bottom: 1px solid white;
+      text-align: left;
+      line-height: 1.3em;
+    }
+
+    nav {
+      grid-row: 1/2;
+    }
+
+    main {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #otherArticles, footer {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    /* nav */
+    nav {
+      border-bottom: 1px solid black;
+    }
+
+    /* left panel */
+
+    #otherArticles {
+      background: black;
+      color: white;
+      padding: 4em;
+      overflow: hidden;
+    }
+
+
+    /* tri settings */
+
+    footer aside{
+      display: grid;
+      grid-template-columns: 4em calc(50vw - 12em) 4em;
+      grid-template-rows: 4em calc(50vw - 10em) 4em;
+    }
+    #emptyTri {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    footer {
+      background: none;
+      position: fixed;
+      top: 4em;
+      left: 2em;
+    }
+    footer div {
+      display: flex;
+      justify-content: space-around;
+    }
+    .flexV{
+      flex-direction: column;
+    }
+
+
+
+	}
+}
