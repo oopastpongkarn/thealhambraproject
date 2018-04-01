@@ -22,14 +22,6 @@
     --site-padding: 1em;
 }
 
-/* hide all scrollbars */
-::-webkit-scrollbar {
-    display: none;
-}
-
-html, body {
-  scroll-behavior: smooth;
-}
 
 /*--------------------------------------------------------------
 Accessibility
@@ -177,14 +169,18 @@ h1 {
     font-size: var(--header-size);
     pointer-events: none;
     text-align: center;
-    line-height: 2.4em;
+    padding: .8em 0;
     border-bottom: 1px solid var(--sideCol);
 }
 
 h2 {
     font-weight: 600;
     font-style: italic;
-    padding: .8em 0;
+    padding: .8em 0 1.6em;
+}
+
+article {
+    padding-top: 2.6em;
 }
 
 article p {
@@ -207,7 +203,9 @@ nav {
     position: sticky;
     padding: .5em 0 0.4em;
     top: -0.1em;
+}
 
+nav {
     --underscore-color: transparent;
 }
 
@@ -224,6 +222,7 @@ nav a:hover {
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
+
 aside {
     position: sticky;
     height: 3em;
@@ -231,7 +230,7 @@ aside {
     left: 0;
     background: white;
     display: flex;
-    overflow-x: scroll;
+    overflow: scroll;
 }
 
 aside img {
@@ -243,16 +242,12 @@ aside img {
 Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 
-html,
-body {
+.site {
     width: 100vw;
-    height: 100vh;
+    height:100vh;
+    padding: var(--site-padding);
     max-width: 640px;
     margin: 0 auto;
-}
-
-nav, section {
-    padding: var(--site-padding);
 }
 
 
@@ -267,92 +262,100 @@ CSS Grid layout for modern browsers:
 
     @media screen and (min-width: 720px) {
          :root {
-            --site-padding: 0;
+            --site-padding: 0 2em 2em;
             --header-size: 1.4em;
-            --spacer: 1.6em;
-            --topBar: 4em;
+            --spacer: 2em;
         }
-
-        html, body {
+        .site {
             max-width: none;
+            display: grid;
+            grid-template-columns: repeat(2, calc(50vw - var(--spacer) * 2));
+            grid-template-rows: 4em 1fr;
+            /*grid-column-gap: 4em;*/
             padding: 0;
-            margin: 0;
-            overflow-x: hidden;
         }
 
         /* global layout */
-        .topBar {
-          width: 100vw;
-          height: var(--topBar);
-          display: flex;
-          position: fixed;
+        header {
+            position: fixed;
+            top: 0;
+            grid-row: 1/2;
+            grid-column: 1/2;
         }
-        header, nav {
+
+        header,
+        #primarytxt, 
+        #secondarytxt,
+        footer,
+        nav {
           width: 50vw;
         }
-        /* header */
-        header {
-          background: black;
-          border-bottom: 1px solid white;
+
+        /* header & nav */
+        header,
+        #secondarytxt {
+            /*background: black;*/
+            background: gray;
         }
+
+        #primarytxt{
+          /*padding: var(--spacer);*/
+        }
+
+        /* scrolling problem */
+        body {
+          height: 100vh;
+          /*overflow: hidden;*/
+        }
+
+        #primarytxt {
+          overflow: hidden;
+          height: 50%;
+        }
+
+        header h1 {
+            color: white;
+            border-bottom: 1px solid white;
+            text-align: left;
+            line-height: 1.3em;
+            padding-left: var(--spacer);
+        }
+
         nav {
-          border-bottom: 1px solid black;
+            grid-row: 1/2;
+            grid-column: 2/3;
         }
-        h1 {
-          color: white;
-          height: 100%;
-          text-align: left;
-          line-height: 100%;
-          margin: 1em 0 0 var(--spacer);
+
+        #secondarytxt,
+        footer {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        #primarytxt {
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
 
         /* nav */
-        ul {
-          padding: 1em 2em;
+        nav {
+            border-bottom: 1px solid black;
         }
 
-        .bodyContainer {
-          width: 100vw;
-          display: flex;
-          flex-direction: row-reverse;
-        }
-        #secondarytxt,
-        #primarytxt {
-          width: 50vw;
-          height: calc(100vh - var(--topBar));
-          margin-top: var(--topBar);
-          overflow: auto;
+        /* left panel */
+        #otherArticles {
+            background: black;
+            color: white;
+            padding: 4em;
+            overflow: hidden;
         }
 
-       #primarytxt article {
-          padding: var(--spacer);
-        }
-
-        #secondarytxt article {
-          height: 50vh;
-          overflow-y: scroll;
-          padding: 4em 6em;
-        }
-
-        #secondarytxt {
-          background: black;
-          color: white;
-        }
 
         /* tri settings */
-
-        aside {
-          background: none;
-          width: 50vw;
-          height: calc(100vh - var(--topBar));
-          position: fixed;
-          top: calc(var(--spacer) * 2 + 0.5em);
-          left: calc(var(--spacer) * 0.5);
-          display: grid;
-          grid-template-columns: 4em calc(50vw - 10em) 4em;
-          grid-template-rows: 4em calc(50vw - 10em) 4em;
+        footer aside {
+            display: grid;
+            grid-template-columns: 4em calc(50vw - 12em) 4em;
+            grid-template-rows: 4em calc(50vw - 10em) 4em;
         }
-
         #emptyTri {
             grid-row: 2/3;
             grid-column: 2/3;
@@ -360,7 +363,8 @@ CSS Grid layout for modern browsers:
         footer {
             background: none;
             position: fixed;
-            /* z-index: -1; */
+            top: 4em;
+            left: 2em;
         }
         footer div {
             display: flex;
@@ -369,6 +373,5 @@ CSS Grid layout for modern browsers:
         .flexV {
             flex-direction: column;
         }
-
     }
 }
