@@ -26,9 +26,7 @@ $(function() {
 
     	let path = $(this).attr('href');
 		$('#primarytxt').load('text/' + path +'.html');
-		// animate({scrollTop:0}, 500).
 		$("#primarytxt").animate({opacity:1}, 1000);
-		// $("#primarytxt").fadeIn(1000);
 	});
 
 	$(".triTag a").click(function() {

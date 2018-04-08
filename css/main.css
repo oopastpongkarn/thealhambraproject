@@ -278,6 +278,7 @@ CSS Grid layout for modern browsers:
             padding: 0;
             margin: 0;
             overflow-x: hidden;
+            background: black;
         }
 
         /* global layout */
@@ -323,7 +324,9 @@ CSS Grid layout for modern browsers:
           margin-top: var(--topBar);
           overflow: auto;
         }
-
+        #primarytxt {
+          background: white;
+        }
        #primarytxt article {
           padding: var(--spacer);
         }
@@ -335,8 +338,8 @@ CSS Grid layout for modern browsers:
         }
 
         #secondarytxt {
-          background: black;
           color: white;
+          z-index: 10;
         }
 
         /* tri settings */
@@ -346,21 +349,19 @@ CSS Grid layout for modern browsers:
           width: 50vw;
           height: calc(100vh - var(--topBar));
           position: fixed;
-          top: calc(var(--spacer) * 2 + 0.5em);
-          left: calc(var(--spacer) * 0.5);
+          top: calc(var(--topBar) + 0.5em);
+          left: 0;
           display: grid;
-          grid-template-columns: 4em calc(50vw - 10em) 4em;
-          grid-template-rows: 4em calc(50vw - 10em) 4em;
+          grid-template-columns: 1fr calc(50vw - var(--topBar) * 2) 1fr;
+          grid-template-rows: 1fr calc(100vh - var(--topBar) * 3) 1fr;
+        }
+        aside .triTag:hover {
+          opacity: 0.5;
         }
 
         #emptyTri {
             grid-row: 2/3;
             grid-column: 2/3;
-        }
-        footer {
-            background: none;
-            position: fixed;
-            /* z-index: -1; */
         }
         footer div {
             display: flex;
