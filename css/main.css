@@ -332,9 +332,9 @@ CSS Grid layout for modern browsers:
         }
 
         #secondarytxt article {
-          height: 80%;
+          height: calc(100vh - 8em - var(--topBar));
           overflow-y: scroll;
-          padding: 4em 6em 0;
+          margin: 4em 6em;
         }
 
         #secondarytxt {
