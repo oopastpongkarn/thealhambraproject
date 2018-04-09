@@ -159,6 +159,15 @@ a {
 General styling
 --------------------------------------------------------------*/
 
+.linkToTri {
+  background: yellow;
+  text-transform: none;
+  font-weight: 400;
+}
+article img {
+  width: 100%;
+}
+
 nav a {
     font-size: 0.8em;
 }
