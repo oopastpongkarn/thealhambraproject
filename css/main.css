@@ -346,12 +346,13 @@ CSS Grid layout for modern browsers:
         }
 
         #secondarytxt article {
-          height: calc(100vh - 8em - var(--topBar));
           overflow-y: scroll;
-          margin: 4em 6em;
         }
 
         #secondarytxt {
+          width: calc(50vw - 8em);
+          height: calc(100vh - 8em - var(--topBar));
+          margin: 8em 4em 4em;
           color: white;
           z-index: 10;
         }
@@ -369,8 +370,9 @@ CSS Grid layout for modern browsers:
           grid-template-columns: 1fr calc(50vw - var(--topBar) * 2) 1fr;
           grid-template-rows: 1fr calc(100vh - var(--topBar) * 3) 1fr;
         }
-        aside .triTag:hover {
-          opacity: 0.5;
+
+        .svg {
+          width: 2.8em;
         }
 
         #emptyTri {
@@ -386,4 +388,10 @@ CSS Grid layout for modern browsers:
         }
 
     }
+}
+
+
+/* svg */
+svg:hover polygon {
+    opacity: 0.5;
 }
