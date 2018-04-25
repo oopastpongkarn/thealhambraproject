@@ -165,7 +165,7 @@ General styling
 --------------------------------------------------------------*/
 
 .linkToTri {
-  background: yellow;
+  background: #00ffff;
   text-transform: none;
   font-weight: 400;
 }
@@ -323,7 +323,7 @@ CSS Grid layout for modern browsers:
 
         /* nav */
         ul {
-          padding: 1em 2em;
+          padding: 1.2em 2em 1em;
         }
 
         .bodyContainer {
