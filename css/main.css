@@ -164,13 +164,21 @@ a {
 General styling
 --------------------------------------------------------------*/
 
+.embededVideo {
+  width: calc(100vw - 2em);
+  height: calc((100vw - 2em) * 0.75);
+  max-height: 50vh;
+}
+
 .linkToTri {
   background: #00ffff;
   text-transform: none;
   font-weight: 400;
 }
+
 article img {
   width: 100%;
+  background: #000;
 }
 
 nav a {
@@ -197,7 +205,6 @@ h1 {
 
 h2 {
     font-weight: 600;
-    /* font-style: italic; */
     padding: .8em 0;
 }
 
@@ -383,6 +390,14 @@ CSS Grid layout for modern browsers:
           color: white;
           z-index: 10;
         }
+
+        /* embed videos */
+        .embededVideo {
+          width: calc(50vw - 8em);
+          height: calc((50vw - 8em) * 0.75);
+          max-height: 50vh;
+        }
+
 
         /* tri settings */
 
