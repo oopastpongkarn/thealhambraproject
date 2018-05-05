@@ -184,7 +184,7 @@ body {
 }
 
 ::selection {
-    background-color: var(--color-main);
+    color: var(--color-main);
 }
 
 h1 {
@@ -197,7 +197,7 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-style: italic;
+    /* font-style: italic; */
     padding: .8em 0;
 }
 
@@ -269,7 +269,6 @@ nav, section {
     padding: var(--site-padding);
 }
 
-
 /*--------------------------------------------------------------
 CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
@@ -280,11 +279,11 @@ CSS Grid layout for modern browsers:
 @supports (grid-area: auto) {
 
     @media screen and (min-width: 720px) {
-         :root {
-            --site-padding: 0;
-            --header-size: 1.4em;
-            --spacer: 1.6em;
-            --topBar: 4em;
+        :root {
+          --site-padding: 0;
+          --header-size: 1.4em;
+          --spacer: 1.6em;
+          --topBar: 4em;
         }
 
         html, body {
@@ -349,6 +348,34 @@ CSS Grid layout for modern browsers:
           overflow-y: scroll;
         }
 
+        /* foot notes */
+        #secondarytxt sup,
+        .footnote {
+          color: var(--color-main);
+        }
+        .footnote {
+          font-size: 0.8em;
+        }
+
+        #secondarytxt a:not(sup) {
+          color: var(--color-main);
+          font-weight: 400;
+          font-size: 150%;
+          text-transform: capitalize;
+          text-decoration: underline;
+        }
+
+        #secondarytxt a img{
+          transition: 1s;
+        }
+        #secondarytxt a img:hover{
+          filter: invert(1);
+          transition: .4s;
+        }
+
+        #secondarytxt a:hover {
+          color: white;
+        }
         #secondarytxt {
           width: calc(50vw - 8em);
           height: calc(100vh - 8em - var(--topBar));
