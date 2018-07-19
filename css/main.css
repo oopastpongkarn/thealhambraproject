@@ -1,39 +1,39 @@
 @font-face {
-    font-family: 'fivo';
-    src: url('../assets/font/fivo_obl.ttf');
+	font-family: 'fivo';
+	src: url('../assets/font/fivo_obl.ttf');
 }
 
 @font-face {
-    font-family: 'fivo';
-    src: url('../assets/font/fivo_reg.ttf');
+	font-family: 'fivo';
+	src: url('../assets/font/fivo_reg.ttf');
 }
 
 @font-face {
-    font-family: 'fivo';
-    src: url('../assets/font/fivo_bold.ttf');
-    font-weight: bold;
+	font-family: 'fivo';
+	src: url('../assets/font/fivo_bold.ttf');
+	font-weight: bold;
 }
 
 @font-face {
-    font-family: 'fivo';
-    src: url('../assets/font/fivo_light.otf');
-    font-weight: thin;
+	font-family: 'fivo';
+	src: url('../assets/font/fivo_light.otf');
+	font-weight: thin;
 }
 
 :root {
-    --header-size: 1.6em;
-    --color-main: #00ffff;
-    --sideCol: black;
-    --site-padding: 1em;
+	--header-size: 1.6em;
+	--color-main: #00ffff;
+	--sideCol: black;
+	--site-padding: 1em;
 }
 
 /* hide all scrollbars */
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 html, body {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
@@ -44,33 +44,33 @@ Accessibility
 /* Text meant only for screen readers */
 
 .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar */
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar */
 }
 
 
@@ -80,83 +80,89 @@ Typography
 
 b,
 strong {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 dfn,
-cite,
 em,
 i {
-    font-style: italic;
+	font-style: italic;
+}
+
+cite {
+	font-family: 'Noto Serif', serif;
+
 }
 
 blockquote {
-    margin: 0 1.5em;
+	margin: 0 1.5em;
 }
 
 address {
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 
 pre {
-    display: inline-block;
-    font-family: Courier, monospace;
-    color: #ddca7e;
-    background: #282c34;
-    padding: .5em .8em;
-    border-radius: .2em;
+	display: inline-block;
+	font-family: Courier, monospace;
+	color: #ddca7e;
+	background: #282c34;
+	padding: .5em .8em;
+	border-radius: .2em;
 }
 
 code,
 kbd,
 tt,
 var {
-    font: 15px Courier, monospace;
+	font: 15px Courier, monospace;
 }
 
 abbr,
 acronym {
-    border-bottom: 1px dotted #666;
-    cursor: help;
+	border-bottom: 1px dotted #666;
+	cursor: help;
 }
 
 mark,
 ins {
-    background: #fff9c0;
-    text-decoration: none;
+	background: #fff9c0;
+	text-decoration: none;
 }
 
 sup,
 sub {
-    font-size: 75%;
-    height: 0;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
 sup {
-    bottom: 1ex;
+	bottom: 1ex;
 }
 
 sub {
-    top: .5ex;
+	top: .5ex;
 }
 
 small {
-    font-size: 75%;
+	font-size: 75%;
 }
 
 big {
-    font-size: 125%;
+	font-size: 125%;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 600;
-    text-transform: uppercase;
+	text-decoration: underline;
+	color: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
 }
+
+
 
 
 
@@ -165,51 +171,55 @@ General styling
 --------------------------------------------------------------*/
 
 .embededVideo {
-  width: calc(100vw - 2em);
-  height: calc((100vw - 2em) * 0.75);
-  max-height: 50vh;
+	width: calc(100vw - 2em);
+	height: calc((100vw - 2em) * 0.75);
+	max-height: 50vh;
 }
 
 .linkToTri {
-  background: #00ffff;
-  text-transform: none;
-  font-weight: 400;
+	/*  background: #00ffff;*/
+	text-decoration: underline;
+	text-transform: none;
+	font-weight: 400;
 }
 
 article img {
-  width: 100%;
-  background: #000;
+	width: 100%;
+	background: #000;
 }
 
 nav a {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 body {
-    font-family: 'fivo';
-    font-size: 1.2em;
-    line-height: var(--header-size);
+	/*    font-family: 'Noto Serif', serif;*/
+	font-family: 'fivo';
+	font-size: 1.0em;
+	line-height: var(--header-size);
 }
 
+
+
 ::selection {
-    color: var(--color-main);
+	color: var(--color-main);
 }
 
 h1 {
-    font-size: var(--header-size);
-    pointer-events: none;
-    text-align: center;
-    line-height: 2.4em;
-    border-bottom: 1px solid var(--sideCol);
+	font-size: var(--header-size);
+	pointer-events: none;
+	text-align: center;
+	line-height: 2.4em;
+	border-bottom: 1px solid var(--sideCol);
 }
 
 h2 {
-    font-weight: 600;
-    padding: .8em 0;
+	font-weight: 600;
+	padding: .8em 0;
 }
 
 article p {
-    margin-bottom: var(--header-size);
+	margin-bottom: var(--header-size);
 }
 
 
@@ -218,27 +228,27 @@ Navigation
 --------------------------------------------------------------*/
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav {
-    background-color: white;
-    position: -webkit-sticky;
-    position: sticky;
-    padding: .5em 0 0.4em;
-    top: -0.1em;
+	background-color: white;
+	position: -webkit-sticky;
+	position: sticky;
+	padding: .5em 0 0.4em;
+	top: -0.1em;
 
-    --underscore-color: transparent;
+	--underscore-color: transparent;
 }
 
 nav a {
-    /*border-bottom: 1px solid var(--underscore-color);*/
-    font-weight: 100;
+	/*border-bottom: 1px solid var(--underscore-color);*/
+	font-weight: 100;
 }
 
 nav a:hover {
-    --underscore-color: black;
+	--underscore-color: black;
 }
 
 
@@ -246,17 +256,17 @@ nav a:hover {
 Footer
 --------------------------------------------------------------*/
 aside {
-    position: sticky;
-    height: 3em;
-    bottom: 0;
-    left: 0;
-    background: black;
-    display: flex;
-    overflow-x: scroll;
+	position: sticky;
+	height: 3em;
+	bottom: 0;
+	left: 0;
+	background: black;
+	display: flex;
+	overflow-x: scroll;
 }
 
 aside img {
-    height: 3em;
+	height: 3em;
 }
 
 
@@ -266,14 +276,14 @@ Basic responsive layout for all browsers:
 
 html,
 body {
-    width: 100vw;
-    height: 100vh;
-    max-width: 640px;
-    margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	max-width: 640px;
+	margin: 0 auto;
 }
 
 nav, section {
-    padding: var(--site-padding);
+	padding: var(--site-padding);
 }
 
 /*--------------------------------------------------------------
@@ -285,155 +295,155 @@ CSS Grid layout for modern browsers:
 
 @supports (grid-area: auto) {
 
-    @media screen and (min-width: 720px) {
-        :root {
-          --site-padding: 0;
-          --header-size: 1.4em;
-          --spacer: 1.6em;
-          --topBar: 4em;
-        }
+	@media screen and (min-width: 720px) {
+		:root {
+			--site-padding: 0;
+			--header-size: 1.4em;
+			--spacer: 1.6em;
+			--topBar: 4em;
+		}
 
-        html, body {
-            max-width: none;
-            padding: 0;
-            margin: 0;
-            overflow-x: hidden;
-            background: black;
-        }
+		html, body {
+			max-width: none;
+			padding: 0;
+			margin: 0;
+			overflow-x: hidden;
+			background: black;
+		}
 
-        /* global layout */
-        .topBar {
-          width: 100vw;
-          height: var(--topBar);
-          display: flex;
-          position: fixed;
-        }
-        header, nav {
-          width: 50vw;
-        }
-        /* header */
-        header {
-          background: black;
-          border-bottom: 1px solid white;
-        }
-        nav {
-          border-bottom: 1px solid black;
-        }
-        h1 {
-          color: white;
-          height: 100%;
-          text-align: left;
-          line-height: 100%;
-          margin: 1em 0 0 var(--spacer);
-        }
+		/* global layout */
+		.topBar {
+			width: 100vw;
+			height: var(--topBar);
+			display: flex;
+			position: fixed;
+		}
+		header, nav {
+			width: 50vw;
+		}
+		/* header */
+		header {
+			background: black;
+			border-bottom: 1px solid white;
+		}
+		nav {
+			border-bottom: 1px solid black;
+		}
+		h1 {
+			color: white;
+			height: 100%;
+			text-align: left;
+			line-height: 100%;
+			margin: 1em 0 0 var(--spacer);
+		}
 
-        /* nav */
-        ul {
-          padding: 1.2em 2em 1em;
-        }
+		/* nav */
+		ul {
+			padding: 1.2em 2em 1em;
+		}
 
-        .bodyContainer {
-          width: 100vw;
-          display: flex;
-          flex-direction: row-reverse;
-        }
-        #secondarytxt,
-        #primarytxt {
-          width: 50vw;
-          height: calc(100vh - var(--topBar));
-          margin-top: var(--topBar);
-          overflow: auto;
-        }
-        #primarytxt {
-          background: white;
-        }
-       #primarytxt article {
-          padding: var(--spacer);
-        }
+		.bodyContainer {
+			width: 100vw;
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		#secondarytxt,
+		#primarytxt {
+			width: 50vw;
+			height: calc(100vh - var(--topBar));
+			margin-top: var(--topBar);
+			overflow: auto;
+		}
+		#primarytxt {
+			background: white;
+		}
+		#primarytxt article {
+			padding: var(--spacer);
+		}
 
-        #secondarytxt article {
-          overflow-y: scroll;
-        }
+		#secondarytxt article {
+			overflow-y: scroll;
+		}
 
-        /* foot notes */
-        #secondarytxt sup,
-        .footnote {
-          color: var(--color-main);
-        }
-        .footnote {
-          font-size: 0.8em;
-        }
+		/* foot notes */
+		#secondarytxt sup,
+		.footnote {
+			color: var(--color-main);
+		}
+		.footnote {
+			font-size: 0.8em;
+		}
 
-        #secondarytxt a:not(sup) {
-          color: var(--color-main);
-          font-weight: 400;
-          font-size: 150%;
-          text-transform: capitalize;
-          text-decoration: underline;
-        }
+		#secondarytxt a:not(sup) {
+			color: var(--color-main);
+			font-weight: 400;
+			font-size: 150%;
+			text-transform: capitalize;
+			text-decoration: underline;
+		}
 
-        #secondarytxt a img{
-          transition: 1s;
-        }
-        #secondarytxt a img:hover{
-          filter: invert(1);
-          transition: .4s;
-        }
+		#secondarytxt a img{
+			transition: 1s;
+		}
+		#secondarytxt a img:hover{
+			filter: invert(1);
+			transition: .4s;
+		}
 
-        #secondarytxt a:hover {
-          color: white;
-        }
-        #secondarytxt {
-          width: calc(50vw - 8em);
-          height: calc(100vh - 8em - var(--topBar));
-          margin: 8em 4em 4em;
-          color: white;
-          z-index: 10;
-        }
+		#secondarytxt a:hover {
+			color: white;
+		}
+		#secondarytxt {
+			width: calc(50vw - 8em);
+			height: calc(100vh - 8em - var(--topBar));
+			margin: 8em 4em 4em;
+			color: white;
+			z-index: 10;
+		}
 
-        /* embed videos */
-        .embededVideo {
-          width: calc(50vw - 8em);
-          height: calc((50vw - 8em) * 0.75);
-          max-height: 50vh;
-        }
+		/* embed videos */
+		.embededVideo {
+			width: calc(50vw - 8em);
+			height: calc((50vw - 8em) * 0.75);
+			max-height: 50vh;
+		}
 
 
-        /* tri settings */
+		/* tri settings */
 
-        aside {
-          background: none;
-          width: 50vw;
-          height: calc(100vh - var(--topBar));
-          position: fixed;
-          top: calc(var(--topBar) + 0.5em);
-          left: 0;
-          display: grid;
-          grid-template-columns: 1fr calc(50vw - var(--topBar) * 2) 1fr;
-          grid-template-rows: 1fr calc(100vh - var(--topBar) * 3) 1fr;
-        }
+		aside {
+			background: none;
+			width: 50vw;
+			height: calc(100vh - var(--topBar));
+			position: fixed;
+			top: calc(var(--topBar) + 0.5em);
+			left: 0;
+			display: grid;
+			grid-template-columns: 1fr calc(50vw - var(--topBar) * 2) 1fr;
+			grid-template-rows: 1fr calc(100vh - var(--topBar) * 3) 1fr;
+		}
 
-        .svg {
-          width: 2.8em;
-        }
+		.svg {
+			width: 2.8em;
+		}
 
-        #emptyTri {
-            grid-row: 2/3;
-            grid-column: 2/3;
-        }
-        footer div {
-            display: flex;
-            justify-content: space-around;
-        }
-        .flexV {
-            flex-direction: column;
-        }
+		#emptyTri {
+			grid-row: 2/3;
+			grid-column: 2/3;
+		}
+		footer div {
+			display: flex;
+			justify-content: space-around;
+		}
+		.flexV {
+			flex-direction: column;
+		}
 
-    }
+	}
 }
 
 
 /* svg */
 svg:hover polygon {
-    opacity: 0.5;
+	opacity: 0.5;
 }
