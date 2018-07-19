@@ -195,7 +195,7 @@ nav a {
 body {
 	/*    font-family: 'Noto Serif', serif;*/
 	font-family: 'fivo';
-	font-size: 1.0em;
+	font-size: 1.1em;
 	line-height: var(--header-size);
 }
 
@@ -216,6 +216,10 @@ h1 {
 h2 {
 	font-weight: 600;
 	padding: .8em 0;
+}
+
+h6 {
+	font-size: 1.5em;
 }
 
 article p {
