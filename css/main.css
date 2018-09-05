@@ -90,7 +90,7 @@ i {
 }
 
 cite {
-	font-family: 'Noto Serif', serif;
+	font-family: 'Source Serif Pro', serif;
 
 }
 
@@ -193,7 +193,7 @@ nav a {
 }
 
 body {
-	/*    font-family: 'Noto Serif', serif;*/
+	/*    font-family: 'Source Serif Pro', serif;*/
 	font-family: 'fivo';
 	font-size: 1.1em;
 	line-height: var(--header-size);
