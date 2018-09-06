@@ -153,6 +153,8 @@ sub {
 
 small {
 	font-size: 75%;
+	text-align: center;
+	
 }
 
 big {
@@ -166,10 +168,6 @@ a {
 	text-transform: uppercase;
 }
 
-caption {
-	font-size: 75%;
-	text-align: center;
-}
 
 
 
