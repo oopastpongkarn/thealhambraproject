@@ -218,7 +218,7 @@ h1 {
 	pointer-events: none;
 	text-align: center;
 	line-height: 2.4em;
-/*	border-bottom: 1px solid var(--sideCol);*/
+	border-bottom: 1px solid var(--sideCol);
 }
 
 h2 {
@@ -274,7 +274,7 @@ nav {
 	position: sticky;
 	padding: .5em 0 0.4em;
 	top: -0.1em;
-	--underscore-color: transparent;
+	--underscore-color: red;
 }
 
 nav a {
@@ -363,11 +363,9 @@ CSS Grid layout for modern browsers:
 			background: black;
 			border-bottom: 1px solid white;
 		}
-/*
 		nav {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid blue;
 		}
-*/
 		h1 {
 			color: white;
 			height: 100%;
