@@ -154,8 +154,17 @@ sub {
 small {
 	font-size: 75%;
 	text-align: center;
-	
+	display: block;	
 }
+
+article small {
+	font-size: 75%;
+	text-align: center;
+	display: block;	
+	color: red;
+}
+
+
 
 big {
 	font-size: 125%;
