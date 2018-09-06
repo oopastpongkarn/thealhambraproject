@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'fivo';
 	src: url('../assets/font/fivo_obl.ttf');
+	font-weight: italic;
 }
 
 @font-face {
@@ -99,7 +100,9 @@ blockquote {
 }
 
 address {
-	margin: 0 0 1.5em;
+	font-family: 'fivo', sans-serif;
+	font-weight: italic;
+	
 }
 
 pre {
