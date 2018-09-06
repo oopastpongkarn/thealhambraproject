@@ -189,9 +189,11 @@ article img {
 	background: #000;
 }
 
+/*
 nav a {
 	font-size: 0.75em;
 }
+*/
 
 body {
 	/*    font-family: 'Source Serif Pro', serif;*/
@@ -216,7 +218,7 @@ h1 {
 	pointer-events: none;
 	text-align: center;
 	line-height: 2.4em;
-	border-bottom: 1px solid var(--sideCol);
+/*	border-bottom: 1px solid var(--sideCol);*/
 }
 
 h2 {
@@ -246,7 +248,17 @@ article p {
 	padding-left: 5%;
 }
 
+.translate {
+	
+}
 
+.rotate {
+	
+}
+
+.reflex {
+	
+}
 /*--------------------------------------------------------------
 Navigation
 --------------------------------------------------------------*/
@@ -266,9 +278,10 @@ nav {
 }
 
 nav a {
-	/*border-bottom: 1px solid var(--underscore-color);*/
+	border-bottom: 1px solid transparent;
 	font-weight: 100;
 	text-decoration: none;
+	font-size: 0.75em;
 }
 
 nav a:hover {
