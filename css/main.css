@@ -268,10 +268,12 @@ nav {
 nav a {
 	/*border-bottom: 1px solid var(--underscore-color);*/
 	font-weight: 100;
+	text-decoration: none;
 }
 
 nav a:hover {
 	--underscore-color: black;
+	text-decoration: underline;
 }
 
 
@@ -349,9 +351,11 @@ CSS Grid layout for modern browsers:
 			background: black;
 			border-bottom: 1px solid white;
 		}
+/*
 		nav {
 			border-bottom: 1px solid black;
 		}
+*/
 		h1 {
 			color: white;
 			height: 100%;
