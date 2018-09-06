@@ -274,7 +274,7 @@ nav {
 	position: sticky;
 	padding: .5em 0 0.4em;
 	top: -0.1em;
-	--underscore-color: red;
+	--underscore-color: transparent;
 }
 
 nav a {
@@ -364,7 +364,7 @@ CSS Grid layout for modern browsers:
 			border-bottom: 1px solid white;
 		}
 		nav {
-			border-bottom: 1px solid blue;
+			border-bottom: 1px solid black;
 		}
 		h1 {
 			color: white;
@@ -376,7 +376,7 @@ CSS Grid layout for modern browsers:
 
 		/* nav */
 		ul {
-			padding: 1.2em 2em 1em;
+			padding: 1.6em 2em 1em;
 		}
 
 		.bodyContainer {
