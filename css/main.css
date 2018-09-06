@@ -150,15 +150,8 @@ sub {
 	top: .5ex;
 }
 
-small {
-	font-size: 75%;
-}
 
-small {
-	font-size: 75%;
-}
-
-article caption {
+article small {
 	font-size: 75%;
 	text-align: center;
 	display: block;	
@@ -265,6 +258,11 @@ article p {
 }
 
 .des {
+	padding-left: 5%;
+	font-size: 75%;
+}
+
+.des2 {
 	padding-left: 5%;
 }
 
