@@ -31,7 +31,7 @@ $(function() {
   // 2. reset style
   $('#primarytxt').load('text/primary_translation.html');
   $('#translation_btn').css({
-    'border-bottom': '1px solid black',
+//    'border-bottom': '1px solid black',
     'font-weight': '600'
   });
 
@@ -43,7 +43,7 @@ $(function() {
       'font-weight': '100'
     });
     $(this).css({
-      'border-bottom': '1px solid black',
+//      'border-bottom': '1px solid black',
       'font-weight': '600'
     });
 

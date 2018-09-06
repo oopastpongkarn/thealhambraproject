@@ -278,7 +278,6 @@ nav {
 }
 
 nav a {
-	border-bottom: 1px solid transparent;
 	font-weight: 100;
 	text-decoration: none;
 	font-size: 0.75em;
