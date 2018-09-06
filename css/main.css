@@ -184,7 +184,8 @@ General styling
 }
 
 article img {
-	width: 100%;
+	width: 90%;
+	padding-left: 5%;
 	background: #000;
 }
 
@@ -199,10 +200,15 @@ body {
 	line-height: var(--header-size);
 }
 
+audio {
+	padding-left: 5%;
+}
+
 
 
 ::selection {
-	color: var(--color-main);
+	color: white;
+	background-color: lightgrey;
 }
 
 h1 {
@@ -218,6 +224,13 @@ h2 {
 	padding: .8em 0;
 }
 
+h3 {
+	font-size: var(--header-size);
+	pointer-events: none;
+	border-bottom: 1px solid var(--sideCol);
+	margin: 0;
+}
+
 h6 {
 	font-size: 1.5em;
 }
@@ -225,6 +238,10 @@ h6 {
 article p {
 	margin-bottom: var(--header-size);
 	line-height: 2em;
+}
+
+.des {
+	padding-left: 5%;
 }
 
 
