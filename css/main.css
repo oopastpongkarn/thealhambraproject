@@ -95,7 +95,10 @@ cite {
 }
 
 blockquote {
-	margin: 0 1.5em;
+/*	margin: 0 1.5em;*/
+	width: 80%;
+	padding-left: 10%;
+	
 }
 
 address {
