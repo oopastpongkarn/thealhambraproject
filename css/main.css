@@ -172,10 +172,22 @@ big {
 a {
 	text-decoration: underline;
 	color: inherit;
+	transition: 1s;
 /*
 	font-weight: 600;
 	text-transform: uppercase;
 */
+}
+
+a:hover {
+	opacity: 0.5;
+	
+}
+
+li a {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: red;
 }
 
 
