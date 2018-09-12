@@ -172,8 +172,10 @@ big {
 a {
 	text-decoration: underline;
 	color: inherit;
+/*
 	font-weight: 600;
 	text-transform: uppercase;
+*/
 }
 
 
