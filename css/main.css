@@ -434,17 +434,17 @@ CSS Grid layout for modern browsers:
 		/* foot notes */
 		#secondarytxt sup,
 		.footnote {
-			color: var(--color-main);
+/*			color: var(--color-main);*/
 		}
 		.footnote {
 			font-size: 0.8em;
 		}
 
 		#secondarytxt a:not(sup) {
-			color: var(--color-main);
+/*			color: var(--color-main);*/
 			font-weight: 400;
-			font-size: 150%;
-			text-transform: capitalize;
+/*			font-size: 150%;*/
+/*			text-transform: capitalize;*/
 			text-decoration: underline;
 		}
 
@@ -452,8 +452,9 @@ CSS Grid layout for modern browsers:
 			transition: 1s;
 		}
 		#secondarytxt a img:hover{
-			filter: invert(1);
+/*			filter: invert(1);*/
 			transition: .4s;
+			filter: opacity(0.5);
 		}
 
 		#secondarytxt a:hover {
