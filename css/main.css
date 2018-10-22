@@ -235,8 +235,9 @@ body {
 }
 
 audio {
-	padding-left: 5%;
+	padding-left: 24%;
 	padding-top: 20%;
+	padding-bottom: 1%;
 }
 
 iframe {
