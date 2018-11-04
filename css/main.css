@@ -540,10 +540,11 @@ svg:hover polygon {
 	opacity: 0.5;
 }
 
-svg:active polygon {
-	fill: yellow;
+a svg:active polygon {
+	fill: red;
+	opacity: 1;
 }
 
-svg:focus {
+svg:focus polygon{
 	fill: pink;
 }
