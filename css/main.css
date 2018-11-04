@@ -538,9 +538,9 @@ CSS Grid layout for modern browsers:
 /* svg */
 .triTag svg:hover polygon {
 	opacity: 0.5;
-	fill:yellow;
+	fill: yellow;
 }
 
 .triTag svg:active polygon{
-	fill: blue;
+	fill: pink;
 }
