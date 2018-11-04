@@ -537,18 +537,13 @@ CSS Grid layout for modern browsers:
 
 /* svg */
 svg:hover polygon {
-/*	opacity: 0.5;*/
-	fill: grey;
-}
-
-svg:target polygon {
-	fill: red;
+	opacity: 0.5;
 }
 
 svg:active polygon {
 	fill: yellow;
 }
 
-svg:focus polygon {
+svg:focus {
 	fill: pink;
 }
