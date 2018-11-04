@@ -540,6 +540,6 @@ svg:hover polygon {
 	opacity: 0.5;
 }
 
-a svg:active {
-	fill: red;
+.triTag svg:active polygon{
+	fill: blue;
 }
