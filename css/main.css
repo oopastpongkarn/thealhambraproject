@@ -298,6 +298,10 @@ article p {
 	padding-top: 0;
 }
 
+.pattern img {
+	border: none;
+}
+
 .translate {
 
 }
