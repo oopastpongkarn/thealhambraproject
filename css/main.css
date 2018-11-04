@@ -213,14 +213,6 @@ General styling
 	font-weight: 400;
 }
 
-article img {
-	width: 90%;
-	margin-left: 5%;
-	background: #000;
-	margin-top: 20%;
-	border: white solid 2px;
-}
-
 /*
 nav a {
 font-size: 0.75em;
@@ -298,8 +290,16 @@ article p {
 	padding-top: 0;
 }
 
-.pattern img {
+img.pattern {
 	border: none;
+}
+
+article img {
+	width: 90%;
+	margin-left: 5%;
+	background: #000;
+	margin-top: 20%;
+	border: white solid 2px;
 }
 
 .translate {
