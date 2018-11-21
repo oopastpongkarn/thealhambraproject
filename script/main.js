@@ -51,11 +51,23 @@ $(function() {
     $('#primarytxt').load('text/' + path + '.html');
   });
 
-  $(".svg").click(function() {
+
+
+  // Triangles active state
+  $(".triTag").click(function(e) {
+    // reset all the tags
+    $(".triTag").css({
+      'filter': 'blur(0)',
+      'transition': '1s'
+    });
     e.preventDefault();
     console.log("bang");
-    $("#secondarytxt").load("/links/" + $(this).attr('href') + ".html");
-		// change the svg fill color in active state
+
+		// blur the tri in active states
+    $(this).css({
+      'filter': 'blur(5px)',
+      'transition': '1s'
+    });
   });
 
 
