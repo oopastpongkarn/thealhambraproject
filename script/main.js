@@ -55,6 +55,9 @@ $(function() {
 
   // Triangles active state
   $(".triTag").click(function(e) {
+    $('.triTag a[href="1"]').css({
+      'animation':'none'
+    });
     // reset all the tags
     $(".triTag").css({
       'filter': 'blur(0)',
@@ -74,5 +77,19 @@ $(function() {
   $("h1").click(function(){
     $('#secondarytxt').load('text/bio.html');
   });
+
+  // // scroll indicator
+  // let scrollHeight  = $('#secondarytxt article:first-child').height();
+  // console.log(scrollHeight);
+  //
+  // $('#secondarytxt').on('scroll', function () {
+  //     let scrollTop     = $('#secondarytxt').scrollTop(),
+  //         elementOffset = $('#secondarytxt').offset().top,
+  //         distance      = elementOffset - scrollTop;
+  //
+  //         let scrolled = (distance / scrollHeight) * 100;
+  //
+  //         document.getElementById("myBar").style.width = scrolled + "%";
+  // });
 
 });
