@@ -241,7 +241,6 @@ iframe {
 
 h1 {
 	font-size: var(--header-size);
-	pointer-events: none;
 	text-align: center;
 	line-height: 2.4em;
 	border-bottom: 1px solid var(--sideCol);

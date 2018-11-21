@@ -27,11 +27,12 @@ $(function() {
   });
 
   // initialization
-  // 1. add main article
+  // 1. load articles in both columns
   // 2. reset style
   $('#primarytxt').load('text/primary_translation.html');
+  $('#secondarytxt').load('text/bio.html');
+
   $('#translation_btn').css({
-//    'border-bottom': '1px solid black',
     'font-weight': '600'
   });
 
@@ -43,7 +44,6 @@ $(function() {
       'font-weight': '100'
     });
     $(this).css({
-//      'border-bottom': '1px solid black',
       'font-weight': '600'
     });
 
@@ -70,5 +70,10 @@ $(function() {
     });
   });
 
+  // Load Bio when click on the title
+  $("h1").click(function(){
+    console.log("bang");
+    $('#secondarytxt').load('text/bio.html');
+  });
 
 });
