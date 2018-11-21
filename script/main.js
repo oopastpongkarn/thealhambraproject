@@ -72,7 +72,6 @@ $(function() {
 
   // Load Bio when click on the title
   $("h1").click(function(){
-    console.log("bang");
     $('#secondarytxt').load('text/bio.html');
   });
 
