@@ -232,8 +232,16 @@ audio {
 iframe {
 	width: 100%;
 	max-width: 40vw;
-	min-height: 360px;
+  height: auto;
 	margin: auto;
+}
+
+/* embed pdf control */
+embed {
+  width: 100%;
+  max-width: calc(50vw - 2em);
+  min-height: 360px;
+  margin: auto;
 }
 
 ::selection {
