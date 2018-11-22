@@ -48,7 +48,10 @@ $(function() {
     });
 
     let path = $(this).attr('href');
+    $("#primarytxt").stop().animate({scrollTop:0}, 500);
     $('#primarytxt').load('text/' + path + '.html');
+    $("#primarytxt").fadeIn(1000);
+    // issue: fading isn't working
   });
 
 

@@ -30,5 +30,7 @@
 	$('a').click(function(e) {
 		e.preventDefault();
 		$("#secondarytxt").load("links/" + $(this).attr('href') + ".html");
+		$("#secondarytxt").stop().animate({scrollTop:0}, 500);
+		$("#secondarytxt").fadeIn(1000);
 	});
 </script>
