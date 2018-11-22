@@ -87,18 +87,8 @@ $(function() {
   });
 
   // scroll indicator
-  // let scrollHeight  = $('#secondarytxt article:first-child').height();
-  // console.log(scrollHeight);
-  //
   $('#secondarytxt').on('scroll', function () {
     $('#scrollIndicator').fadeOut(300);
-  //     let scrollTop     = $('#secondarytxt').scrollTop(),
-  //         elementOffset = $('#secondarytxt').offset().top,
-  //         distance      = elementOffset - scrollTop;
-  //
-  //         let scrolled = (distance / scrollHeight) * 100;
-  //
-  //         document.getElementById("myBar").style.width = scrolled + "%";
   });
 
 });
