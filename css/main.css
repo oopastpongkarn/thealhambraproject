@@ -594,7 +594,57 @@ CSS Grid layout for modern browsers:
 			flex-direction: column;
 		}
 
-	}
+    /* scrollIndicator */
+    #scrollIndicator {
+      position: absolute;
+      width: 4em;
+      height: 4em;
+      background: #000;
+      border: 0.2em #fff solid;
+      border-radius: 50%;
+      margin: 60vh auto auto calc(-70vw - 2em);
+      z-index: 100;
+      animation: bounce 1s infinite;
+    }
+    .arrow {
+      /* background-color: red; */
+      float:left;
+      position:relative;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 1em 1em 0 1em;
+      border-color: #fff transparent transparent transparent;
+      -webkit-transform:rotate(360deg);
+      margin: 1.7em 1em 1em 1em;
+    }
+
+    .arrow:after {
+      content:'';
+      position:absolute;
+      top:-1.4em;
+      left:-1em;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 1em 1em 0 1em;
+      border-color: #000 transparent transparent transparent;
+      -webkit-transform:rotate(360deg)；
+    }
+
+    @-webkit-keyframes bounce {
+    	 0% { top: 10%; }
+    	 50%   { top: 14%; }
+    	 100% { top: 10%; }
+    }
+
+    @keyframes bounce {
+      0% { top: 10%; }
+      50%   { top: 14%; }
+      100% { top: 10%; }
+    }
+
+	} /* end of the regular media size */
 }
 
 

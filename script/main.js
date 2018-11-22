@@ -1,5 +1,13 @@
 $(function() {
 
+  function resetTris() {
+    // reset all the tags
+    $(".triTag").css({
+      'filter': 'blur(0)',
+      'transition': '1s'
+    });
+  }
+
   $('img[src$=".svg"]').each(function() {
 
     let $img = $(this);
@@ -61,14 +69,10 @@ $(function() {
     $('.triTag a[href="1"]').css({
       'animation':'none'
     });
-    // reset all the tags
-    $(".triTag").css({
-      'filter': 'blur(0)',
-      'transition': '1s'
-    });
+
     e.preventDefault();
     console.log("bang");
-
+    resetTris();
 		// blur the tri in active states
     $(this).css({
       'filter': 'blur(5px)',
@@ -79,13 +83,15 @@ $(function() {
   // Load Bio when click on the title
   $("h1").click(function(){
     $('#secondarytxt').load('text/bio.html');
+    resetTris();
   });
 
-  // // scroll indicator
+  // scroll indicator
   // let scrollHeight  = $('#secondarytxt article:first-child').height();
   // console.log(scrollHeight);
   //
-  // $('#secondarytxt').on('scroll', function () {
+  $('#secondarytxt').on('scroll', function () {
+    $('#scrollIndicator').fadeOut(300);
   //     let scrollTop     = $('#secondarytxt').scrollTop(),
   //         elementOffset = $('#secondarytxt').offset().top,
   //         distance      = elementOffset - scrollTop;
@@ -93,6 +99,6 @@ $(function() {
   //         let scrolled = (distance / scrollHeight) * 100;
   //
   //         document.getElementById("myBar").style.width = scrolled + "%";
-  // });
+  });
 
 });
